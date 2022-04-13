@@ -47,6 +47,7 @@ body {color: var(--primary-text-color);
 
 .btn {
   cursor: pointer;
+  border: none;
 }
 
 .container {
@@ -67,6 +68,8 @@ body {color: var(--primary-text-color);
   padding-top: 0;
   padding-bottom: 0;
   align-items: center;
+  border-bottom: 1px solid #ececec;
+
 }
 
 .header-logo {
@@ -89,10 +92,6 @@ body {color: var(--primary-text-color);
   padding: 0 auto;
   ;
 }
-
-.header-nav {
-   border-bottom: 1px solid #ececec;
- } 
 
 .nav-list, .contact-list {
   display: flex}
@@ -148,14 +147,12 @@ body {color: var(--primary-text-color);
   display: block;
   align-items: center;
   height: 600px;
-  width: 1600px;
   background-color: var(--background-dark-color);
   margin: 0 auto;
 
 }
 
 .hero-container {
-  display: block;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -200,6 +197,11 @@ body {color: var(--primary-text-color);
 
 /* Features section */
 
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -213,12 +215,7 @@ body {color: var(--primary-text-color);
   margin: -1px;
 }
 
-.features-container {
-  display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
+             
 .features-list {
   display: flex;
 }
@@ -253,15 +250,14 @@ body {color: var(--primary-text-color);
 }
 
 /* Work section */
-.work-container {
-  display: block;
-  padding-top: 0;
-  padding-bottom: 94px;
+
+.work-section {
+padding-bottom: 94px;
 }
 
 .section-title {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -270,7 +266,7 @@ body {color: var(--primary-text-color);
   color: var(--primary-title-color);
   }
 
-.works {
+.works-list {
   display: flex;
 }
 
@@ -299,7 +295,6 @@ body {color: var(--primary-text-color);
   display: flex;
     }
 
-
 .team-member {
   display: flex;
   flex-direction: column;
@@ -307,16 +302,18 @@ body {color: var(--primary-text-color);
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
 }
 
 .team-member:not(:last-child) {
   margin-right: 30px;
 }
 
-.name {
+.team-member-text {
   display: block;
-  margin-top: 30px;
+  padding: 30px;
+}
+
+.name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -327,26 +324,20 @@ body {color: var(--primary-text-color);
   }
 
 .job-title {
-  display: block;
-  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 /* Footer section */
+
 .footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--background-dark-color);
 }
-.footer-section .container {
-  display: block;
-  padding-top: 60px;
-  padding-bottom: 60 px;
-  /* padding-left: 0;
-  padding-right: auto; */
-  }
 
 .footer-logo {
   display: block;
@@ -359,7 +350,6 @@ body {color: var(--primary-text-color);
   color: var(--white-color);
   }
 
-  /* .address-link  */
   .address-item .link
   {
     display: block;
@@ -388,21 +378,18 @@ body {color: var(--primary-text-color);
   /* Portfolio page */
 
  /* Portfolio section */
-/*  
+ 
  .portfolio-section {
-   padding: 0 auto;
-   width: 100%;
-   
- } */
+   display: block;
+   padding-top: 94px;
+   padding-bottom: 94px;
+    }
 
-.buttons-container {
-  display: flex;
-  align-items: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
-  padding-left: auto;
-  padding-right: auto;
-}
+  .buttons-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    }
 
  .buttons-list {
    display: flex;
@@ -411,9 +398,9 @@ body {color: var(--primary-text-color);
  }
  
  .filter-button {
-   display: block;
-   margin: 0 8px 0 0;
-   padding: 6px 22px;
+    display: block;
+    margin: 0 8px 0 0;
+    padding: 6px 22px;
     font-family: inherit;  
     font-weight: 500;
     font-size: 16px;
@@ -431,10 +418,6 @@ body {color: var(--primary-text-color);
     background-color: var(--accent-color);
   }
   
-  .projects-container {
-    padding-bottom: 94px;
-    
-  }
   .projects-list {
     display: flex;
     flex-wrap: wrap;

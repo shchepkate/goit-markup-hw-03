@@ -30,7 +30,7 @@
       </nav>
 
       <ul class="list contact-list">
-        <li class="item"><a href="mailto:info@devstudio.com" class="link tel-link">info@devstudio.com</a></lшi>
+        <li class="item"><a href="mailto:info@devstudio.com" class="link tel-link">info@devstudio.com</a></li>
         <li class="item"><a href="tel:+380961111111" class="link tel-link">+38 096 111 11 11</a></li>
       </ul>
     </div>
@@ -47,74 +47,79 @@
       </section>
 
       <!-- Features section -->
-      <section class="container features-container">
-        <h2 class="visually-hidden">Особенности</h2>
+      <section class="features-section">
+        <div class="container features-container">
+          <h2 class="visually-hidden">Особенности</h2>
 
-        <ul class="list features-list">
-          <li class="features-item">
-            <h3 class="features-title">Внимание к деталям</h3>
-            <p class="features-text">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
+          <ul class="list features-list">
+            <li class="features-item">
+              <h3 class="features-title">Внимание к деталям</h3>
+              <p class="features-text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
 
-          <li class="features-item">
-            <h3 class="features-title">Пунктуальность</h3>
-            <p class="features-text">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
+            <li class="features-item">
+              <h3 class="features-title">Пунктуальность</h3>
+              <p class="features-text">
+                Задача организации, в особенности же рамки и место обучения кадров
+                влечет за собой.
+              </p>
+            </li>
 
-          <li class="features-item">
-            <h3 class="features-title">Планирование</h3>
-            <p class="features-text">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
+            <li class="features-item">
+              <h3 class="features-title">Планирование</h3>
+              <p class="features-text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
 
-          <li class="features-item">
-            <h3 class="features-title">Современные технологии</h3>
-            <p class="features-text">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+            <li class="features-item">
+              <h3 class="features-title">Современные технологии</h3>
+              <p class="features-text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Work section -->
-      <section  class="container work-container">
-        <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul class="list works">
-          <li class="work-item">
-            <img
-              src="./images/box1-structuring.jpg"
-              alt="Создание структуры сайта"
-              width="370"
-            />
-          </li>
-          <li class="work-item">
-            <img
-              src="./images/box2-mobileapp.jpg"
-              alt="Создание веб-приложений"
-              width="370"
-            />
-          </li>
-          <li class="work-item">
-            <img
-              src="./images/box3-webdesign.jpg"
-              alt="Создание дизайна сайта"
-              width="370"
-            />
-          </li>
-        </ul>
+      <section class="work-section">
+        <div class="container work-container">
+          <h2 class="section-title">Чем мы занимаемся</h2>
+          <ul class="list works-list">
+            <li class="work-item">
+              <img
+                src="./images/box1-structuring.jpg"
+                alt="Создание структуры сайта"
+                width="370"
+              />
+            </li>
+            <li class="work-item">
+              <img
+                src="./images/box2-mobileapp.jpg"
+                alt="Создание веб-приложений"
+                width="370"
+              />
+            </li>
+            <li class="work-item">
+              <img
+                src="./images/box3-webdesign.jpg"
+                alt="Создание дизайна сайта"
+                width="370"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Team section -->
-      <section class="section team-section container">
+      <section class="section team-section">
+        <div class="container">
         <h2 class="section-title team-section-title">Наша команда</h2>
 
         <ul class="list team-list team-container">
@@ -124,8 +129,10 @@
               alt="Мужчина в очках"
               width="270"
             />
-            <h3 class="name">Игорь Демьяненко</h3>
-            <p lang="en" class="job-title">Product Designer</p>
+            <div class="team-member-text">
+              <h3 class="name">Игорь Демьяненко</h3>
+              <p lang="en" class="job-title">Product Designer</p>
+            </div>
           </li>
 
           <li class="team-member">
@@ -134,8 +141,11 @@
               alt="Женщина в очках"
               width="270"
             />
-            <h3 class="name">Ольга Репина</h3>
-            <p lang="en" class="job-title">Frontend Developer</p>
+            <div class="team-member-text">
+              <h3 class="name">Ольга Репина</h3>
+              <p lang="en" class="job-title">Frontend Developer</p>
+            </div>
+            
           </li>
 
           <li class="team-member">
@@ -144,8 +154,11 @@
               alt="Мужчина в голубой рубашке"
               width="270"
             />
-            <h3 class="name">Николай Тарасов</h3>
+            <div class="team-member-text">
+              <h3 class="name">Николай Тарасов</h3>
             <p lang="en" class="job-title">Marketing</p>
+            </div>
+           
           </li>
 
           <li class="team-member">
@@ -154,10 +167,14 @@
               alt="Мужчина в очках"
               width="270"
             />
-            <h3 class="name">Михаил Ермаков</h3>
-            <p lang="en" class="job-title">UI Designer</p>
+            <div class="team-member-text">
+              <h3 class="name">Михаил Ермаков</h3>
+              <p lang="en" class="job-title">UI Designer</p>
+            </div>
+           
           </li>
         </ul>
+      </div>
       </section>
     </main>
 
